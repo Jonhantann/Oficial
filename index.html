@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Básico -->
+  <title>WinxS Corp.</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+<!----- google fonts ---> 
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+
+<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+
+<body>
+  <!-- Project -->
+  <script src="main.js"></script>
+ <!-- Lets go -->
+ <!--- --- NavBar --- ---->
+  <nav>
+    <ul>
+      <li><a onclick="changeContent('home')"><i class="fi fi-br-house-blank"></i></a></li>
+      <li><a onclick="changeContent('search')"><i class="fi fi-br-crown"></i></a></li>
+      <li><a onclick="changeContent('user')"><i class="fi fi-bs-flame"></i></a></li>
+      <li><a onclick="changeContent('cart')"><i class="fi fi-br-bookmark"></i></a></li>
+  
+      <li><a id="Configurações" onclick="changeContent('settings')"><i class="fi fi-rr-settings"></i></a></li>
+    </ul>
+  </nav>
+
+  <div id="home" class="content-section">
+
+<div class="001">
+  <!-- WinxS Community-->
+<p style="margin-top: 25.5px; font-size: 20px;">WinxS Corp.</p>
+</div>
+
+  <!-- Icons 001 -->
+<div class="icon-container top-left">
+        <a class="icon-link">
+       <i class="fi fi-bs-flame"></i> 
+        </a>
+    </div>
+    
+    <div class="icon-container top-right">
+        <a class="icon-link">
+          <i class="fi fi-br-crown"></i>
+        </a>
+    </div>
+ <!------ Conteúdo 001 -------->
+ <style>
+        .winxs-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            margin-top: -300px;
+        }
+
+        .winxs-title {
+            color: black;
+        }
+
+        .winxs-date {
+            font-size: 1rem;
+            color: #666666; /* Cor menos chamativa para a data */
+        }
+    </style>
+    
+    <div class="winxs-container">
+        <div class="winxs-title">Novidades 🔥</div>
+        <div class="winxs-date">2024</div>
+    </div>
+    
+    
+  </div>
+  <!------- fim da home ------>
+  
+  
+  <div id="search" class="content-section">
+    
+    <style>
+    .container {
+       max-width: 600px;
+       margin: 50px auto;
+       padding: 20px;
+       text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            color: black;
+        }
+        p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Acesso Restrito</h1>
+        <p>Esta seção do site é exclusiva para usuários premium. Por favor, faça o login com sua conta premium para acessar este conteúdo.</p>
+    </div>
+
+
+
+  <style>
+        .premium-button {
+            margin-left: 125px;
+            position: absolute;
+            margin-top: -55px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .premium-button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <a style="" href="https://www.example.com" class="premium-button">Ser Premium</a>
+    
+  
+    
+  </div>
+  
+  
+  
+
+  <div id="user" class="content-section">
+    
+    
+    
+    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Reels</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #000;
+            color: white;
+        }
+
+        .header {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        .gallery {
+            width: 100%;
+            height: 100%;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            scroll-snap-align: start;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .button {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Video Reels</h1>
+            <input type="file" id="videoInput" accept="video/*" />
+            <button id="postButton" class="button">Post Reel</button>
+        </div>
+        <div id="videoGallery" class="gallery"></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.1.0/firebase-storage.js"></script>
+    <script>
+        // Configurar o Firebase
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        // Inicializar o Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        const storage = firebase.storage();
+        const videosRef = storage.ref().child('videos');
+
+        const videoGallery = document.getElementById('videoGallery');
+
+        document.getElementById('postButton').addEventListener('click', () => {
+            const videoInput = document.getElementById('videoInput');
+            const file = videoInput.files[0];
+
+            if (file && file.type.startsWith('video/') && file.size <= 120 * 1024 * 1024) {
+                const videoRef = videosRef.child(file.name);
+                videoRef.put(file).then(() => {
+                    alert('Video uploaded successfully.');
+                }).catch(error => {
+                    console.error('Error uploading video:', error);
+                });
+            } else {
+                alert('Please select a video file of up to 2 minutes.');
+            }
+        });
+
+        function fetchVideos() {
+            videoGallery.innerHTML = '';
+
+            videosRef.listAll().then(function(result) {
+                result.items.forEach(function(videoRef) {
+                    videoRef.getDownloadURL().then(function(url) {
+                        const videoContainer = document.createElement('div');
+                        videoContainer.classList.add('video-container');
+
+                        const videoElement = document.createElement('video');
+                        videoElement.src = url;
+                        videoElement.controls = true;
+                        videoContainer.appendChild(videoElement);
+
+                        videoGallery.appendChild(videoContainer);
+                    }).catch(function(error) {
+                        console.error('Error getting download URL:', error);
+                    });
+                });
+            }).catch(function(error) {
+                console.error('Error listing videos:', error);
+            });
+        }
+
+        setInterval(fetchVideos, 5000); // Fetch videos every 5 seconds
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+  <div id="cart" class="content-section">
+    <h2>Seção Cart</h2>
+    <p>Aqui está o conteúdo da seção Cart...</p>
+    <table>
+      <tr>
+        <th>Produto</th>
+        <th>Quantidade</th>
+        <th>Preço</th>
+      </tr>
+      <tr>
+        <td>Produto 1</td>
+        <td>1</td>
+        <td>R$ 50,00</td>
+      </tr>
+      <tr>
+        <td>Produto 2</td>
+        <td>2</td>
+        <td>R$ 30,00</td>
+      </tr>
+    </table>
+  </div>
+
+
+
+  <div id="settings" class="content-section">
+  <div class="content">
+<style>
+  /* Estilo para centralizar o texto */
+  .conf {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhar no topo */
+    height: 100vh; /* Altura total da viewport */
+    margin: 0;
+  }
+</style>
+
+<div class="conf">
+  <h1>Configurações</h1>
+</div>
+
+<style>
+  .opções {
+  display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 20px;
+   margin-top: -650px;
+   
+    
+  }
+  
+  .icones001 {
+   position: absolute;
+   display: flex;
+    flex-direction: column; /* Organiza os itens em coluna */
+    gap: 57px;
+   margin-top: -367px;
+   margin-left: -50px;
+   font-size: 20px;
+  }
+  
+</style>
+
+
+<div class="opções">
+
+
+  <p> Preferências do aplicativo </p> 
+  <p> Notificações  </p> 
+  <p> Assinatura e Contas </p> 
+
+<a href="#" id="Ajuda&Suporte" <p> Ajuda e Suporte </p> </a>
+  <p> Sobre o Aplicativo </p>
+
+</div>
+
+<div class="icones001">
+ <i class="fi fi-br-settings-sliders"></i>
+ <i class="fi fi-br-bell"></i>
+ <i class="fi fi-br-wallet"></i>
+ <i class="fi fi-br-comment"></i>
+ <i class="fi fi-br-comment-exclamation"></i>
+ </div>
+</div>
+
+
+
+
+<style>
+  .content {
+    display: block;
+  }
+  .hidden {
+    display: none;
+  }
+</style>
+
+
+
+<div id="novaTela" class="hidden">
+  <h1>Nova Tela</h1>
+  <p>Conteúdo da nova tela que será exibido após o clique.</p>
+  <a href="#" id="Config">Voltar para o conteúdo original</a>
+</div>
+
+<script>
+  // Mostra a nova tela ao clicar no link
+  document.getElementById('Ajuda&Suporte').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que o link funcione como um link normal
+
+    // Oculta o conteúdo inicial
+    document.querySelector('.content').style.display = 'none';
+    // Exibe a nova tela
+    document.getElementById('novaTela').style.display = 'block';
+  });
+
+  // Volta para o conteúdo original ao clicar no link "Voltar para o conteúdo original"
+  document.getElementById('Configurações').addEventListener('click', function(event) {
+    event.preventDefault(); // Evita que o link funcione como um link normal
+
+    // Oculta a nova tela
+    document.getElementById('novaTela').style.display = 'none';
+    // Exibe o conteúdo inicial
+    document.querySelector('.content').style.display = 'block';
+  });
+</script>
+
+
+
+
+
+
+
+    
+    
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+ <!---- // Inicializa o conteúdo da seção Home como ativo ao carregar a página --->
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+      changeContent('home');
+    });
+</script>
+  
+<script>
+  // Função para mostrar o conteúdo da seção selecionada e esconder os outros
+  function changeContent(sectionId) {
+    // Esconde todos os conteúdos
+    var contentSections = document.querySelectorAll('.content-section');
+    contentSections.forEach(function(section) {
+      section.classList.remove('active');
+    });
+
+    // Mostra apenas o conteúdo da seção selecionada
+    var selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.add('active');
+  }
+
+  // Mostra a seção Home como ativa ao carregar a página
+  document.addEventListener('DOMContentLoaded', function() {
+    changeContent('home');
+  });
+</script>
+  
+ </body>
+</html>
